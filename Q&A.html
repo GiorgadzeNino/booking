@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Booking</title>
+        <meta name="Description" content="about lorem ipsum" />
+        <meta name="keywords" content=" lorem ipsum web task" />
+        <meta name="author" content="Nino Giorgadze">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="./css/stylesheet.css" rel="stylesheet"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(e){
+  $('.question').click(function (e){
+    if($(this).next('.answer').css('display') != 'block'){
+      $(this).next('.answer').addClass('active').slideDown('slow');
+    } else {
+      $(this).next('.active').slideUp('fast').removeClass('active');
+      // (this).next('.answer').html(<p>-</p>);
+    }
+  });
+});
+
+</script>
+    </head>
+    <body>
+    <!--Start of Header-->
+        <header id="header">
+            <h1>
+                <a href="index.html">Booking</a>
+            </h1>
+            <ul class="nav">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./partners.html">partners</a></li>
+                <li><a href="./Q&A.html"  class="activePage">Q&A</a></li>
+                <li><a href="./contact.html">contact</a></li>
+            </ul>
+        </header>
+    <!--End of Header-->
+    <!--Start of Main-->
+        <main id="main questCont">
+            <div class='container'>
+              
+                <div class='question' title="tap to view answer">Where is it possible to book tables at the best price?</div>
+                <div class='answer'>
+                  <div>Directly on the restaurant web site</div>
+                </div>
+                <div class='question' title="tap to view answer">Can I book via the website without giving my credit card number?</div>
+                <div class='answer'>
+                  <div>Yes, you can book without prepaying your reservation. Payment takes place at the restaurant instead. 
+                    However, reservations at a Save rate and some promotions must be paid at the time of booking.</div>
+                </div>
+                <div class='question' title="tap to view answer">Why can't I use my debit/credit card to book?</div>
+                <div class='answer' >
+                  <div>Be careful not to use any special characters in the boxes for name and card number, e.g. (.) (,) (-) (/) (:).
+                    </div>
+                </div>
+                <div class='question' title="tap to view answer">How do I cancel or make changes to my reservation?</div>
+                <div class='answer' >
+                  <div>Please contact  on telephone number +995 595 647 222.</div>
+                </div>
+              </div>
+        </main>
+    <!--End of Main-->
+    <!--Start of Main-->
+        <footer>
+            
+        </footer>
+    <!--End of Main-->
+        </body>
+</html>

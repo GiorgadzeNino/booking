@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Booking</title>
+        <meta name="Description" content="about lorem ipsum" />
+        <meta name="keywords" content=" lorem ipsum web task" />
+        <meta name="author" content="Nino Giorgadze">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="./css/stylesheet.css" rel="stylesheet"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script>
+        $(document).ready(function(e){
+        $(".page").click(function(e){
+            var page = $(this).next(".page").text()
+            switch (page-1) { 
+            case 1:
+                $("#first").show();
+                $("#second").hide();
+                break;
+            case 2: 
+                $("#first").hide();
+                $("#second").show();
+                break;
+            default:
+                $("#first").show();
+                $("#second").hide();
+            }
+        })})
+        </script>
+    </head>
+    <body>
+    <!--Start of Header-->
+        <header id="header">
+            <h1>
+                <a href="index.html">Booking</a>
+            </h1>
+            <ul class="nav">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./partners.html">partners</a></li>
+                <li><a href="./Q&A.html">Q&A</a></li>
+                <li><a href="./contact.html" class="activePage">contact</a></li>
+            </ul>
+        </header>
+    <!--End of Header-->
+    <!--Start of Main-->
+       <main id="partnersCont">
+           <div id="first">
+            <div class="restaurantContainer">
+                <img src="./images/galaktioni.jpg" alt="galaktioni"/>
+                <div>
+                    <h3>Galaktioni</h3>
+                    <p class="location">14/9 Tabidze Galaqtion st., Tbilisi 0105 Georgia</p>
+                    <p>PRICE RANGE
+                        33 &#8382;- 83&#8382;</p>
+                    <a href="https://www.facebook.com/GalaktioniRestaurant/"><img src="./images/facebook.png" alt="facebook" class="facebook"/>facebook</a>
+                    <p><i>Galaktioni offers fine dining experience in the exquisite interior 
+                        decorated by handpicked contemporary art pieces and late 19th century antique furniture.</i></p>
+                    <div id="booking">
+                        <input type="date"/>
+                        <input type="number" placeholder="how many?"/>
+                    <button class="book"> book</button>
+                    </div>
+                </div>
+            </div>
+            <div class="restaurantContainer">
+                    <img src="./images/barbarestan.jpg" alt="barbarestan"/>
+                    <div>
+                        <h3>barbarestan</h3>
+                        <p class="location">N132 D. Aghmashenebeli Ave.</p>
+                        <p>PRICE RANGE
+                            25&#x24;-30&#x24;</p>
+                        <a href="https://www.facebook.com/barbarestan/"><img src="./images/facebook.png" alt="facebook" class="facebook"/>facebook</a>
+                        <p><i> In short, the atmosphere is very pleasant and different from all
+                             the traditional restaurants in the region. It is the possible destination 
+                             for true gourmands in Georgia.</i></p>
+                        <div id="booking">
+                               <input type="date"/>
+                               <input type="number" placeholder="how many?"/>
+                           <button class="book"> book</button>
+                        </div>
+                    </div>
+                </div>
+            <div class="restaurantContainer">
+                    <img src="./images/romen.jpg" alt="Shio Ramen"/>
+                    <div>
+                        <h3>Shio Ramen</h3>
+                        <p class="location">8 Egnat Ninoshvili str Tbilisi, Georgia</p>
+                        <p>PRICE RANGE
+                            30&#x24;-40&#x24;</p>
+                        <a href="https://www.facebook.com/ShioTbilisi/"><img src="./images/facebook.png" alt="facebook" class="facebook"/>facebook</a>
+                        <p><i>  it is the one and only ramen-exclusive (or ramen-oriented?)
+                             outfit in Georgia. Don’t confuse it with Ramekai, which also offers 
+                             Japanese cuisine, but contrary to its name, is more about sushi rolls than ramen. </i></p>
+                        <div id="booking">
+                               <input type="date"/>
+                               <input type="number" placeholder="how many?"/>
+                           <button class="book"> book</button>
+                        </div>
+                    </div>
+            </div>
+            <div class="restaurantContainer">
+                    <img src="./images/romen.jpg" alt="Shio Ramen"/>
+                    <div>
+                        <h3>Shio Ramen</h3>
+                        <p class="location">8 Egnat Ninoshvili str Tbilisi, Georgia</p>
+                        <p>PRICE RANGE
+                            30&#x24;-40&#x24;</p>
+                        <a href="https://www.facebook.com/ShioTbilisi/"><img src="./images/facebook.png" alt="facebook" class="facebook"/>facebook</a>
+                        <p><i>  it is the one and only ramen-exclusive (or ramen-oriented?)
+                             outfit in Georgia. Don’t confuse it with Ramekai, which also offers 
+                             Japanese cuisine, but contrary to its name, is more about sushi rolls than ramen. </i></p>
+                        <div id="booking">
+                               <input type="date"/>
+                               <input type="number" placeholder="how many?"/>
+                           <button class="book"> book</button>
+                        </div>
+                    </div>
+            </div>
+            <div class="restaurantContainer">
+                    <img src="./images/romen.jpg" alt="Shio Ramen"/>
+                    <div>
+                        <h3>Shio Ramen</h3>
+                        <p class="location">8 Egnat Ninoshvili str Tbilisi, Georgia</p>
+                        <p>PRICE RANGE
+                            30&#x24;-40&#x24;</p>
+                        <a href="https://www.facebook.com/ShioTbilisi/"><img src="./images/facebook.png" alt="facebook" class="facebook"/>facebook</a>
+                        <p><i>  it is the one and only ramen-exclusive (or ramen-oriented?)
+                             outfit in Georgia. Don’t confuse it with Ramekai, which also offers 
+                             Japanese cuisine, but contrary to its name, is more about sushi rolls than ramen. </i></p>
+                        <div id="booking">
+                               <input type="date"/>
+                               <input type="number" placeholder="how many?"/>
+                           <button class="book"> book</button>
+                        </div>
+                    </div>
+            </div>
+            <div class="restaurantContainer">
+                    <img src="./images/romen.jpg" alt="Shio Ramen"/>
+                    <div>
+                        <h3>Shio Ramen</h3>
+                        <p class="location">8 Egnat Ninoshvili str Tbilisi, Georgia</p>
+                        <p>PRICE RANGE
+                            30&#x24;-40&#x24;</p>
+                        <a href="https://www.facebook.com/ShioTbilisi/"><img src="./images/facebook.png" alt="facebook" class="facebook"/>facebook</a>
+                        <p><i>  it is the one and only ramen-exclusive (or ramen-oriented?)
+                             outfit in Georgia. Don’t confuse it with Ramekai, which also offers 
+                             Japanese cuisine, but contrary to its name, is more about sushi rolls than ramen. </i></p>
+                        <div id="booking">
+                               <input type="date"/>
+                               <input type="number" placeholder="how many?"/>
+                           <button class="book"> book</button>
+                        </div>
+                    </div>
+            </div>
+        </div>
+        <div id="second">
+                <div class="restaurantContainer">
+                        <img src="./images/barbarestan.jpg" alt="barbarestan"/>
+                        <div>
+                            <h3>barbarestan</h3>
+                            <p class="location">N132 D. Aghmashenebeli Ave.</p>
+                            <p>PRICE RANGE
+                                25&#x24;-30&#x24;</p>
+                            <a href="https://www.facebook.com/barbarestan/"><img src="./images/facebook.png" alt="facebook" class="facebook"/>facebook</a>
+                            <p><i> In short, the atmosphere is very pleasant and different from all
+                                 the traditional restaurants in the region. It is the possible destination 
+                                 for true gourmands in Georgia.</i></p>
+                            <div id="booking">
+                                   <input type="date"/>
+                                   <input type="number" placeholder="how many?"/>
+                               <button class="book"> book</button>
+                            </div>
+                        </div>
+                </div>
+                <div class="restaurantContainer">
+                    <img src="./images/galaktioni.jpg" alt="galaktioni"/>
+                    <div>
+                        <h3>Galaktioni</h3>
+                        <p class="location">14/9 Tabidze Galaqtion st., Tbilisi 0105 Georgia</p>
+                        <p>PRICE RANGE
+                            33 &#8382;- 83&#8382;</p>
+                        <a href="https://www.facebook.com/GalaktioniRestaurant/"><img src="./images/facebook.png" alt="facebook" class="facebook"/>facebook</a>
+                        <p><i>Galaktioni offers fine dining experience in the exquisite interior 
+                            decorated by handpicked contemporary art pieces and late 19th century antique furniture.</i></p>
+                        <div id="booking">
+                            <input type="date"/>
+                            <input type="number" placeholder="how many?"/>
+                        <button class="book"> book</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="restaurantContainer">
+                        <img src="./images/romen.jpg" alt="Shio Ramen"/>
+                        <div>
+                            <h3>Shio Ramen</h3>
+                            <p class="location">8 Egnat Ninoshvili str Tbilisi, Georgia</p>
+                            <p>PRICE RANGE
+                                30&#x24;-40&#x24;</p>
+                            <a href="https://www.facebook.com/ShioTbilisi/"><img src="./images/facebook.png" alt="facebook" class="facebook"/>facebook</a>
+                            <p><i>  it is the one and only ramen-exclusive (or ramen-oriented?)
+                                 outfit in Georgia. Don’t confuse it with Ramekai, which also offers 
+                                 Japanese cuisine, but contrary to its name, is more about sushi rolls than ramen. </i></p>
+                            <div id="booking">
+                                   <input type="date"/>
+                                   <input type="number" placeholder="how many?"/>
+                               <button class="book"> book</button>
+                            </div>
+                        </div>
+                </div>
+                <div class="restaurantContainer">
+                        <img src="./images/romen.jpg" alt="Shio Ramen"/>
+                        <div>
+                            <h3>Shio Ramen</h3>
+                            <p class="location">8 Egnat Ninoshvili str Tbilisi, Georgia</p>
+                            <p>PRICE RANGE
+                                30&#x24;-40&#x24;</p>
+                            <a href="https://www.facebook.com/ShioTbilisi/"><img src="./images/facebook.png" alt="facebook" class="facebook"/>facebook</a>
+                            <p><i>  it is the one and only ramen-exclusive (or ramen-oriented?)
+                                 outfit in Georgia. Don’t confuse it with Ramekai, which also offers 
+                                 Japanese cuisine, but contrary to its name, is more about sushi rolls than ramen. </i></p>
+                            <div id="booking">
+                                   <input type="date"/>
+                                   <input type="number" placeholder="how many?"/>
+                               <button class="book"> book</button>
+                            </div>
+                        </div>
+                </div>
+                <div class="restaurantContainer">
+                        <img src="./images/romen.jpg" alt="Shio Ramen"/>
+                        <div>
+                            <h3>Shio Ramen</h3>
+                            <p class="location">8 Egnat Ninoshvili str Tbilisi, Georgia</p>
+                            <p>PRICE RANGE
+                                30&#x24;-40&#x24;</p>
+                            <a href="https://www.facebook.com/ShioTbilisi/"><img src="./images/facebook.png" alt="facebook" class="facebook"/>facebook</a>
+                            <p><i>  it is the one and only ramen-exclusive (or ramen-oriented?)
+                                 outfit in Georgia. Don’t confuse it with Ramekai, which also offers 
+                                 Japanese cuisine, but contrary to its name, is more about sushi rolls than ramen. </i></p>
+                            <div id="booking">
+                                   <input type="date"/>
+                                   <input type="number" placeholder="how many?"/>
+                               <button class="book"> book</button>
+                            </div>
+                        </div>
+                </div>
+                <div class="restaurantContainer">
+                        <img src="./images/romen.jpg" alt="Shio Ramen"/>
+                        <div>
+                            <h3>Shio Ramen</h3>
+                            <p class="location">8 Egnat Ninoshvili str Tbilisi, Georgia</p>
+                            <p>PRICE RANGE
+                                30&#x24;-40&#x24;</p>
+                            <a href="https://www.facebook.com/ShioTbilisi/"><img src="./images/facebook.png" alt="facebook" class="facebook"/>facebook</a>
+                            <p><i>  it is the one and only ramen-exclusive (or ramen-oriented?)
+                                 outfit in Georgia. Don’t confuse it with Ramekai, which also offers 
+                                 Japanese cuisine, but contrary to its name, is more about sushi rolls than ramen. </i></p>
+                            <div id="booking">
+                                   <input type="date"/>
+                                   <input type="number" placeholder="how many?"/>
+                               <button class="book"> book</button>
+                            </div>
+                        </div>
+                </div>
+            </div>
+            <div class="pagination">
+                    <a href="#">&laquo;</a>
+                    <a class="page" >1</a>
+                    <a class="page" >2</a>
+                    <a class="page" >3</a>
+                    <a class="page" >4</a>
+                    <a class="page" >5</a>
+                    <a class="page" >6</a>
+                    <a href="#">&raquo;</a>
+                  </div>
+        </main>
+    <!--End of Main-->
+    <!--Start of Main-->
+        <footer>
+            
+        </footer>
+    <!--End of Main-->
+        </body>
+</html>
