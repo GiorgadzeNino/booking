@@ -51,6 +51,12 @@ li{
     width:100%;
     /* height:55px; */
     height:max-content;
+    
+}
+.header{
+    animation:changeHeader 20s infinite;
+    -webkit-animation: changeHeader 20s infinite;
+    -moz-animation: changeHeader 20s infinite;
 }
 #header h1{
     display:inline-block;
@@ -87,24 +93,34 @@ li{
     background: #dae1e9;
     opacity:0.5;
 }
+@keyframes changeHeader{
+    0%   {background: linear-gradient(180deg, rgba(206,161,53,1) 20%, rgba(255,195,46,1) 80%);}
+    30%  {background: linear-gradient(180deg, rgba(67,111,112,1) 11%, rgba(86,142,144,1) 33%, rgba(95,158,160,1) 68%, rgba(143,187,189,1) 94%);}
+    40%  {background: linear-gradient(180deg, rgba(73,70,70,1) 4%, rgba(164,164,164,1) 35%, rgba(214,214,214,1) 63%, rgba(209,214,214,1) 94%);}
+    60% {background:linear-gradient(180deg, rgba(13,71,161,1) 15%, rgba(21,101,192,1) 35%, rgba(25,118,210,1) 63%, rgba(30,136,229,1) 94%);}
+    80% {background: linear-gradient(180deg, rgba(93,64,55,1) 15%, rgba(109,76,65,1) 35%, rgba(121,85,72,1) 63%, rgba(141,110,99,1) 94%);}
+    100% {background:linear-gradient(180deg, rgba(38,50,56,1) 15%, rgba(55,71,79,1) 35%, rgba(69,90,100,1) 63%, rgba(84,110,122,1) 94%);}
+}
 @keyframes changeBg
 {
    0%   {background-image: url("../images/background.jpg");}
-   20%  {background-image: url("../images/rest.jpeg");}
+   30%  {background-image: url("../images/rest.jpeg");}
    40%  {background-image: url("../images/bg2.jpg");}
    60% {background-image: url("../images/bg3.jpg");}
    80% {background-image: url("../images/bg4.jpg");}
    100% {background-image: url("../images/bg5.jpeg");}
 }
+.main{
+    animation: changeBg 20s infinite;
+    -webkit-animation: changeBg 20s infinite;
+    -moz-animation: changeBg 30 infinite;
+}
 #main{
-    /* background:url(../images/background.jpg) no-repeat center center; */
+    background:url(../images/background.jpg) no-repeat center center;
     background-size: cover;
     height: 100vh;
     width: 100vw;
     position: fixed;
-    animation: changeBg 10s infinite;
-    -webkit-animation: changeBg 10s infinite;
-    -moz-animation: changeBg 100s infinite;
 }
 #main h3{
     color: #eff5f5;
@@ -273,3 +289,8 @@ input[type=date],input[type=number]{
     cursor:pointer;
   }
 /* ----------------   End of Partners ------------------ */
+/*-----------------   Start of About  ------------------ */
+.about{
+
+}
+/*-----------------   End of About  ------------------ */
